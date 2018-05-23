@@ -50,7 +50,7 @@ namespace ExtendedCalculator
         public double DetermineMethod(double Num1, string Operator, double Num2)
         {
             // Opretter et nyt OBJEKT new Calculator == et OBJEKT
-            BasicArithmetic Calc = new BasicArithmetic();
+            ExtendedArithmetic Calc = new ExtendedArithmetic();
 
             if (Operator == "-" || Operator == "+" || Operator == "/" || Operator == "*" || Operator == "^" || Operator == "sqrt" || Operator == "random")
             {
