@@ -34,8 +34,7 @@ namespace ExtendedCalculator
                     DInput2 = PreviousResult;
             }
 
-            Program This = new Program();
-            double Result = This.DetermineMethod(DInput1, Operator, DInput2);
+            double Result = DetermineMethod(DInput1, Operator, DInput2);
 
             Console.WriteLine("Result");
             Console.WriteLine(Result);
@@ -47,7 +46,7 @@ namespace ExtendedCalculator
         }
         public static double PreviousResult;
 
-        public double DetermineMethod(double Num1, string Operator, double Num2)
+        public static double DetermineMethod(double Num1, string Operator, double Num2)
         {
             // Opretter et nyt OBJEKT new Calculator == et OBJEKT
             ExtendedArithmetic Calc = new ExtendedArithmetic();
