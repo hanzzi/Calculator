@@ -6,33 +6,28 @@ namespace ExtendedCalculator
 {
     class BasicArithmetic
     {
+        // Adds two numbers
         public double Addition(double Num1, double Num2)
         {
-            // Adds two parameters together
-            double Value = Num1 + Num2;
-
-            return Value;
+            return Num1 + Num2;
         }
 
+        //Subracts two numbers
         public double Subtract(double Num1, double Num2)
-        {
-            double Value = Num1 - Num2;
-
-            return Value;
+        { 
+            return Num1 - Num2;
         }
 
+        // Multiplies two numbers
         public double Multiply(double Num1, double Num2)
         {
-            double Value = Num1 * Num2;
-
-            return Value;
+            return Num1 * Num2;
         }
 
+        // Divides two numbers
         public double Divide(double Num1, double Num2)
         {
-            double Value = Num1 / Num2;
-
-            return Value;
+            return Num1 / Num2;
         }
     }
 }
