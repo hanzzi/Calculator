@@ -9,7 +9,6 @@ namespace ExtendedCalculator
         public double Power(double Num1, double Num2)
         {
             double Value = System.Math.Pow(Num1, Num2);
-            Program.PreviousResult = Value;
 
             return Value;
         }
@@ -17,7 +16,6 @@ namespace ExtendedCalculator
         public double SquareRoot(double Num1)
         {
             double Value = System.Math.Sqrt(Num1);
-            Program.PreviousResult = Value;
 
             return Value;
         }
@@ -32,7 +30,6 @@ namespace ExtendedCalculator
 
 
             double Value = rnd.Next(INum1, INum2);
-            Program.PreviousResult = Value;
 
             return Value;
         }
