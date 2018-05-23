@@ -16,7 +16,7 @@ namespace ExtendedCalculator
                 double.TryParse(Input1, out DInput1);
 
             if (Input1 == "ANS")
-                DInput1 = Program.PreviousResult;
+                DInput1 = PreviousResult;
 
             // Gets the Operator           
             Console.WriteLine("Please insert Operator (+, -, *, /, ^, sqrt, random)");
@@ -34,8 +34,8 @@ namespace ExtendedCalculator
                     DInput2 = PreviousResult;
             }
 
-            Program Prog = new Program();
-            double Result = Prog.DetermineMethod(DInput1, Operator, DInput2);
+            Program This = new Program();
+            double Result = This.DetermineMethod(DInput1, Operator, DInput2);
 
             Console.WriteLine("Result");
             Console.WriteLine(Result);
